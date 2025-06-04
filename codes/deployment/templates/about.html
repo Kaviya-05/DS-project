@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Predictor - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('/static/background.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .bg-overlay {
+            background-color: rgba(30, 30, 30, 0.85);
+            min-height: 100vh;
+        }
+        .nav-link:hover {
+            background: linear-gradient(to right, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .try-now-btn {
+            background: linear-gradient(to right, #06b6d4, #3b82f6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .try-now-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+        }
+        .overview-container {
+            background: transparent;
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-shadow {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="bg-overlay flex flex-col">
+        <nav class="bg-gray-900 p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">🌙 Career Path Predictor</a>
+                <div class="space-x-6">
+                    <a href="/" class="nav-link text-lg font-semibold text-white">Home</a>
+                    <a href="/predict" class="nav-link text-lg font-semibold text-white">Predict</a>
+                    <a href="/about" class="nav-link text-lg font-semibold text-white">About</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container mx-auto p-4 flex-grow">
+            <h1 class="text-3xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-shadow">About the Project</h1>
+            <div class="overview-container p-6 rounded-lg shadow-lg mb-6">
+                <p class="mb-4 text-lg text-shadow">The Career Path Predictor is an AI-driven application designed to help individuals identify suitable career paths based on their skills, interests, and personality traits.</p>
+                <h2 class="text-xl font-semibold mb-2 text-cyan-400 text-shadow">Purpose</h2>
+                <p class="mb-4 text-shadow">Our goal is to provide personalized career guidance by analyzing key attributes to recommend roles like Software Developer, Database Administrator, or AI Specialist.</p>
+                <h2 class="text-xl font-semibold mb-2 text-cyan-400 text-shadow">Methodology</h2>
+                <p class="mb-4 text-shadow">The system uses a machine learning model trained on a comprehensive dataset of professional profiles. By inputting your skills and traits via intuitive sliders, the model predicts the most suitable career path.</p>
+                <h2 class="text-xl font-semibold mb-2 text-cyan-400 text-shadow">Why Use It?</h2>
+                <p class="mb-6 text-shadow">This tool offers vibrant, data-driven insights for students, professionals, or career changers to align their strengths with rewarding opportunities.</p>
+            </div>
+            <h2 class="text-2xl font-semibold mb-4 text-cyan-400 text-shadow">Input Features Explained</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Computer Architecture</h3>
+                    <p class="text-sm text-shadow">Measures your understanding of computer systems, hardware design, and processor architecture. High scores indicate suitability for roles like Hardware Engineer or Systems Architect.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Programming Skills</h3>
+                    <p class="text-sm text-shadow">Assesses your proficiency in coding and software development. Strong skills here point to careers like Software Developer or Data Scientist.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Project Management</h3>
+                    <p class="text-sm text-shadow">Evaluates your ability to plan, organize, and lead projects. High scores suggest roles like Project Manager or Product Owner.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Communication Skills</h3>
+                    <p class="text-sm text-shadow">Reflects your ability to convey ideas clearly and collaborate effectively. Essential for roles requiring teamwork, like Business Analyst or Consultant.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Openness</h3>
+                    <p class="text-sm text-shadow">Measures your creativity and willingness to embrace new ideas. High openness suits innovative roles like UX Designer or Research Scientist.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Conscientiousness</h3>
+                    <p class="text-sm text-shadow">Assesses your organization, reliability, and attention to detail. High scores align with roles like Quality Assurance Engineer or Operations Manager.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Extraversion</h3>
+                    <p class="text-sm text-shadow">Evaluates your sociability and energy in social settings. High extraversion is ideal for leadership or client-facing roles like Sales Manager.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Agreeableness</h3>
+                    <p class="text-sm text-shadow">Measures your compassion and cooperativeness. High scores suggest suitability for team-oriented roles like HR Specialist or Counselor.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Emotional Range</h3>
+                    <p class="text-sm text-shadow">Reflects your emotional stability and resilience. Balanced scores indicate adaptability for high-pressure roles like IT Manager.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Conversation</h3>
+                    <p class="text-sm text-shadow">Assesses your ability to engage in meaningful dialogue. Strong conversational skills suit roles like Trainer or Public Relations Specialist.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Openness to Change</h3>
+                    <p class="text-sm text-shadow">Measures your adaptability to new environments and challenges. High scores align with dynamic roles like Startup Founder or Innovation Consultant.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Hedonism</h3>
+                    <p class="text-sm text-shadow">Evaluates your pursuit of pleasure and enjoyment. Moderate scores can indicate creativity, suiting roles like Game Designer.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Self-enhancement</h3>
+                    <p class="text-sm text-shadow">Reflects your drive for personal success and recognition. High scores suggest leadership roles like Executive or Entrepreneur.</p>
+                </div>
+                <div class="feature-card p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-cyan-300 text-shadow">Self-transcendence</h3>
+                    <p class="text-sm text-shadow">Measures your focus on helping others and contributing to society. High scores align with roles like Non-profit Manager or Educator.</p>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <a href="/predict" class="try-now-btn text-white px-8 py-4 rounded-lg text-lg font-semibold">Try the Predictor</a>
+            </div>
+        </div>
+        <footer class="p-4 text-center">
+            <p class="text-sm bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">🧠 <em>Built with passion to empower your career decisions.</em></p>
+        </footer>
+    </div>
+</body>
+</html>

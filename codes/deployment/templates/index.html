@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Predictor - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('/static/background.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .bg-overlay {
+            background-color: rgba(30, 30, 30, 0.85);
+            min-height: 100vh;
+        }
+        .nav-link:hover {
+            background: linear-gradient(to right, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .get-started-btn {
+            background: linear-gradient(to right, #06b6d4, #3b82f6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .get-started-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="bg-overlay flex flex-col">
+        <nav class="bg-gray-900 p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">🌙 Career Path Predictor</a>
+                <div class="space-x-6">
+                    <a href="/" class="nav-link text-lg font-semibold text-white">Home</a>
+                    <a href="/predict" class="nav-link text-lg font-semibold text-white">Predict</a>
+                    <a href="/about" class="nav-link text-lg font-semibold text-white">About</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container mx-auto p-4 flex-grow flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Welcome to the Career Path Predictor</h1>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">Discover your ideal career path with our AI-powered tool. Input your skills and personality traits to receive vibrant, data-driven career recommendations.</p>
+                <a href="/predict" class="get-started-btn text-white px-8 py-4 rounded-lg text-lg font-semibold">Get Started</a>
+            </div>
+        </div>
+        <footer class="p-4 text-center">
+            <p class="text-sm bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">🧠 <em>Powered by AI to ignite your career journey.</em></p>
+        </footer>
+    </div>
+</body>
+</html>
